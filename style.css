@@ -186,9 +186,15 @@ th, td {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1368px) {
-  table {
-    margin-top: 70px;
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #introtable {
+  margin-top: -160px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  #introtable {
+  margin-top: -200px;
   }
 }
 
