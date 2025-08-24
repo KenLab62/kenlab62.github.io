@@ -142,11 +142,32 @@ hr {
 }
 
 /* 自己紹介の表について */
-#introtable {
+#selfintro .flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* 画像とテーブルの間に余白 */
+}
+
+/* 画像カラム */
+.column {
+  flex: 1 1 40%;
+}
+#selfintro img {
+  width: 100%;
+  max-width: 300px; /* 大きすぎ防止 */
+  border-radius: 20px;
+  margin-left: 0;   /* PCでも左寄せに */
+}
+/* 変更前
+  #introtable {
   margin-top: -227px;
   margin-left: 28%;
   margin-right: 5%;
   width: 100%;
+} */
+#introtable {
+  flex: 1 1 60%;
+  margin: 0; /* 変な位置調整をリセット */
 }
 table {
   border-spacing: 0;
@@ -169,19 +190,19 @@ th, td {
   padding: 0.8rem;
 }
 
+/* スマホ用：縦並びにする */
 @media only screen and (max-width: 768px) {
-  .column-40 {
+  #selfintro .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column, #introtable {
     width: 100%;
-    margin-bottom: 30px;
   }
-  .column-55 {
-    width: 100%;
-  }
-  #selfintro h3 {
-    font-size: 17px;
-  }
-  #introtable dl {
-    font-size: 13px;
+
+  #introtable table {
+    font-size: 14px;
   }
 }
 
