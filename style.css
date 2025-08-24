@@ -50,7 +50,7 @@ header {
     justify-content: center;
   }
   .header_menu li {
-    margin: 20px 16px 0;
+    margin: 20px 9px 0;
   }
 }
 
@@ -97,9 +97,8 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  #hero {height: 460px;}
-  .hero_inner p {font-size: 15px;}
-  .hero_inner h1 {font-size: 17px;}
+  .hero_inner p {font-size: 30px;}
+  .hero_inner h3 {font-size: 16px;}
 }
 
 /* 「About me」の部分 */
@@ -170,18 +169,26 @@ th, td {
 }
 
 @media only screen and (max-width: 768px) {
-  .column-40 {
+  .column {
     width: 100%;
     margin-bottom: 30px;
   }
-  .column-55 {
-    width: 100%;
+  #selfintro img {
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
   }
-  #selfintro h3 {
-    font-size: 17px;
+  #introtable {
+  margin-top: -20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
   }
-  #introtable dl {
-    font-size: 13px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1368px) {
+  table {
+    margin-top: 70px;
   }
 }
 
@@ -259,9 +266,35 @@ th, td {
 }
 
 @media only screen and (max-width: 768px) {
-  #hero {height: 460px;}
-  .hero_inner p {font-size: 15px;}
-  .hero_inner h1 {font-size: 17px;}
+  .card-group{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 1024px;
+    width: 90%;
+    height: auto;
+    /* カードの横並べ折り返しのレイアウトを実現する */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  /* 左右の間隔をあける */
+  .card-group > :not(:nth-child(2n)){
+    margin-left: 5%;
+  }
+  /* 上下の間隔をあける */
+  .card-group > :nth-child(n+3){
+    margin-top: 20px;
+  }
+  .card{
+    /* 余白をのぞいた１行分の幅を横幅に設定 */
+    width: calc((100% - 20% * 1) / 2);
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2)
+  }
 }
 
 /* 「StudyNotebook」の部分 */
