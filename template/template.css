@@ -56,7 +56,6 @@ header {
 
 /* メイン（「About me」「Portfolio」「Study Notebook」） */
 #hero {
-  background-image: url(./images/top_image.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -66,6 +65,7 @@ header {
   margin-bottom: 100px;
   overflow: hidden;
 }
+/* 写真を少し暗くする */
 #hero::before {
   content: '';
   width: 100%;
@@ -84,29 +84,28 @@ header {
 }
 
 /* コンセプト */
-#concept {
+#subject {
   margin-bottom: 120px;
 }
 .title {
   font-size: 20px;
   font-size: 500;
   color: #856fde;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
-#concept h3 {
+#subject h3 {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+.column {
+  width: 100%;
 }
 .column-2 {
   width: 48%;
 }
 .text {
   line-height: 2;
-}
-
-.column {
-  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
