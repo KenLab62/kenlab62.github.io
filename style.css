@@ -249,7 +249,7 @@ th, td {
   height: auto;
   padding-top: 56.25%;
   background: #bbb;
-  background-size: auto;
+  background-size: contain;
   box-sizing: border-box;
 }
 .card__textbox{
