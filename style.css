@@ -250,11 +250,8 @@ th, td {
   padding-top: 56.25%;
   background: #bbb;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   box-sizing: border-box;
-  align-items: center;
-  overflow: hidden;
-  display: flex;
 }
 .card__textbox{
   width: 100%;
