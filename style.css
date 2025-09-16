@@ -254,6 +254,7 @@ th, td {
   box-sizing: border-box;
   align-items: center;
   overflow: hidden;
+  display: flex;
 }
 .card__textbox{
   width: 100%;
