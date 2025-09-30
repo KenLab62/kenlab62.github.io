@@ -99,9 +99,8 @@ header {
 /* `#subject` の横並びで画像/iframeの縦横比を維持しつつ48%幅に固定 */
 #subject .flex > img,
 #subject .flex > iframe {
-  flex: 0 0 48%;
-  max-width: 48%;
-  width: 100%;
+  flex: 0 0 auto;
+  width: auto;
   height: auto;
   display: block;
 }
@@ -123,9 +122,9 @@ header {
   #subject .flex > .column-2,
   #subject .flex > img,
   #subject .flex > iframe {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
+    width: auto;
+    max-width: none;
+    flex: 0 0 auto;
   }
 }
 
