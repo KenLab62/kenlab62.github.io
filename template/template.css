@@ -103,6 +103,20 @@ header {
   }
 }
 
+/* 小画面では文章と画像を縦並びにする（参考の部分など） */
+@media only screen and (max-width: 768px) {
+  #subject .flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  #subject .flex > .column-2,
+  #subject .flex > img,
+  #subject .flex > iframe {
+    width: 100%;
+  }
+}
+
 /* フッター */
 footer {
   text-align: center;
