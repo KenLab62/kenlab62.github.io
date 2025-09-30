@@ -101,6 +101,7 @@ header {
 #subject .flex > iframe {
   flex: 0 0 48%;
   max-width: 48%;
+  width: 100%;
   height: auto;
   display: block;
 }
