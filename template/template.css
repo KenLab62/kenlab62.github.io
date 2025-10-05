@@ -23,6 +23,7 @@ html {
 /* ヘッダー */
 header {
   padding: 27px 0;
+  margin-bottom: 20px;
 }
 .logo {
   font-size: 24px;
@@ -62,7 +63,7 @@ header {
   border-radius: 30px;
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   overflow: hidden;
 }
 
@@ -120,7 +121,7 @@ header {
   }
 }
 
-/* 小画面では文章と画像を縦並びにする（参考の部分など） */
+/* 小画面では文章と画像を縦並びにする */
 @media only screen and (max-width: 768px) {
   #subject .flex {
     flex-direction: column;
