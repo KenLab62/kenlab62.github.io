@@ -67,7 +67,23 @@ header {
   overflow: hidden;
 }
 
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
 @media only screen and (max-width: 768px) {
+  #hero {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  #hero img {
+    border-radius: 15px;
+  }
+  
   .hero_inner p {font-size: 30px;}
   .hero_inner h3 {font-size: 16px;}
 }
@@ -98,19 +114,19 @@ header {
 }
 
 /* `#subject` の横並びで画像/iframeの縦横比を維持しつつ48%幅に固定 */
-#subject .flex > img,
-#subject .flex > iframe {
+#subject .flex .column-2 img,
+#subject .flex .column-2 iframe {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 /* 画像・動画の比率を560:315(16:9に近い)で維持 */
-#subject .flex > img {
+#subject .flex .column-2 img {
   aspect-ratio: 560 / 315;
   object-fit: cover;
 }
-#subject .flex > iframe {
+#subject .flex .column-2 iframe {
   aspect-ratio: 560 / 315;
 }
 
@@ -128,9 +144,7 @@ header {
     align-items: stretch;
     gap: 16px;
   }
-  #subject .flex > .column-2,
-  #subject .flex > img,
-  #subject .flex > iframe {
+  #subject .flex .column-2 {
     width: 100%;
     max-width: 100%;
   }
