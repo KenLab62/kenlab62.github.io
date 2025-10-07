@@ -159,3 +159,24 @@ footer {
   font-size: 12px;
   margin-top: 40px;
 }
+
+/* 見出しの右に横線が伸びるスタイル */
+.rule-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rule-heading::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 2px;
+  background-color: #333;
+  opacity: .6;
+}
+
+/* セクション余白の調整 */
+.ai-section {
+  padding: 12px 0 8px;
+}
