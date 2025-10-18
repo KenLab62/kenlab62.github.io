@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Ken's Laboratory</title>
+  
+  <!-- リセットCSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"> -->
+  <link rel="stylesheet" href="../../reset.css">
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="../../template/template.css">
+  
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+  
+<body>
+  
+  <!-- ヘッダー（サイト名、メニュー） -->
+  <header>
+    <div class="container flex pop">
+      <a href="../../index.html#top" class="logo">
+        <span>Ken's</span> Laboratory
+      </a>
+      <nav>
+        <ul class="header_menu flex">
+          <li><a href="../../index.html#about me">About me</a></li>
+          <li><a href="../../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../../index.html#studynotebook">StudyNotebook</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- トップ画像（サムネイル）を表示 -->
+    <section id="hero" class="container">
+      <img src="../../images/NINNO_AI_1_top.png" alt="">
+    </section>
+
+    <section id="subject" class="container">
+      <h2 class="title pop">Study Notebook</h2>　<!-- (Portfolio)or(Study Notebook) -->
+      <h3>NINNO ACCADEMIA　【AIマスターコース】</h3>
+      <p class="text">最終更新日： <time datetime="2025-10-19">2025-10-19</time></p>
+      <div class="column">
+        <div class="ai-section">
+          <h4 class="rule-heading">生成AIとは？</h4>
+          <p class="text">
+            ・定義：AIが新しいコンテンツを自動的に作り出すこと<br>
+            →AIが学習したデータをもとに人間の指示（プロンプト）に従って新しいコンテンツを創造・生成する技術<br>
+            ・「生成」の意味<br>
+            →既存のものをコピーではなく学習データを参考に新しく作り出すということ。<br><br>
+          </p>
+
+          <h4 class="rule-heading">学生・企業向けAI生成の可能性</h4>
+          <p class="text">
+            AI生成の可能性について、学生向けと企業向けの2つの側面から見る。<br>
+            <div class="highlight-box">
+              <div class="highlight-label">『学生向けAIの可能性』</div>
+              「AI使用の特徴」<br>
+              ・時間面（学習時間の効率化など）<br>
+              ・生産性・効率（理解度向上など）<br>
+              ・戦略・競争（専門スキル習得など）<br><br>
+              「学生」<br>
+              →ストレス削減、自己学習能力向上など<br><br>
+              「学校」<br>
+              →教育の質向上、教育格差の縮小など
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-label">『企業向けAIの可能性』</div>
+              「ビジネス」<br>
+              ・コスト・時間面（短時間での資料作成など）<br>
+              ・生産性・効率（ミス削減など）<br>
+              ・戦略・競争（新規事業創出など）<br><br>
+              「社員」<br>
+              →ストレス削減、ワークライフバランス改善など<br><br>
+              「会社」<br>
+              →業務プロセス最適化、リスク管理強化など
+            </div>
+            <br>
+
+            <h4 class="rule-heading">実践的活用事例</h4>
+            <p class="text">
+              <table class="case-table">
+                <thead>
+                  <tr>
+                    <th>業界</th>
+                    <th>AI活用方法</th>
+                    <th>導入効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>建設</td>
+                    <td>設計図面作成、建築物のバーチャルツアーなど</td>
+                    <td>一回で多数のパターンを生成可能、工数や人件費の削減など</td>
+                  </tr>
+                  <tr>
+                    <td>マスコットデザイン</td>
+                    <td>デジタルデザイン、デジタルデータの準備・納品など</td>
+                    <td>工数や人件費の削減など</td>
+                  </tr>
+                  <tr>
+                    <td>製造</td>
+                    <td>3Dで部品デザイン生成、多言語技術文書翻訳、AIカメラでのリアルタイムチェックなど</td>
+                    <td>作業時間削減、人件費削減など</td>
+                  </tr>
+                  <tr>
+                    <td>3D業界</td>
+                    <td>一枚の画像から三面図を作成、2D画像から3D画像の作成など</td>
+                    <td>品質向上、工数削減など</td>
+                  </tr>
+                  <tr>
+                    <td>福祉</td>
+                    <td>ケアプラン自動作成、AIバーチャルヒューマンなど</td>
+                    <td>高齢者への安心感の提供、24時間モニタリング・レポート提出など</td>
+                  </tr>
+                  <tr>
+                    <td>教育</td>
+                    <td>個別学習プログラム作成、学生の楽しい学習方法を提供など</td>
+                    <td>作業工数削減、生徒からのポジティブフィードバック</td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+            <br>
+
+            <h4 class="rule-heading">AIを利用する際の注意点</h4>
+            <div class="highlight-box">
+              <div class="highlight-label">AIｘ著作権</div>
+              ・生成コンテンツの商用利用権を確認<br>
+              ・クライアント情報・機密データの適切な取り扱い<br>
+              ・使用ツールが著作権のあるデータで学習していないか確認<br>
+              ・クラウドサービス利用時はデータ管理体制をチェック<br>
+              ・可能な限りローカル環境での作業が安全<br>
+              ・ローカル作業時もモジュールの著作権を確認<br>
+              ※上記すべてについてAI生成企業への相談が重要<br>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-label">AI生成利用における注意点</div>
+              ・ファクトチェックの徹底<br>
+              ・プロンプトの明確化<br>
+              ・人間の監督・判断が必要<br>
+              ・機密情報・著作権あるデータの入力禁止<br>
+              ・ガイドライン・ポリシーの策定<br>
+              ・コミュニティでの知識共有<br>
+              ※上記すべてについてAI生成企業への相談が重要<br>
+            </div>
+            <br>
+
+          </p>
+        </div>
+      </div>
+
+  <!-- 以下テンプレ集 -->
+    <!-- テンプレ1　文章のみ 
+
+     <div class="column">
+        <p class="text">
+          これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。<br> <br>
+          これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。<br> <br>
+          これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。
+        </p>
+      </div>
+
+    -->
+    <!-- テンプレ2　左が「文章」、右が「画像」
+
+     <div class="flex">
+        <div class="column-2">
+          <p class="text">
+            これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。<br> <br>
+            これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。<br> <br>
+            これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。
+          </p>
+        </div>
+        <div class="column-2">
+          <img src="./images/top_image.jpg" alt="">
+        </div>
+      </div>
+
+    -->
+    <!-- テンプレ2　左が「画像」、右が「文章」 
+
+     <div class="flex">
+        <div class="column-2">
+          <img src="./images/top_image.jpg" alt="">
+        </div>
+        <div class="column-2">
+          <p class="text">
+            これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。<br> <br>
+            これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。<br> <br>
+            これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。これは例の文章です。
+          </p>
+        </div>
+      </div>
+
+    -->
+
+    
+  <!-- フッター（ページの一番下にロゴを表示） -->
+  <footer>
+    <a href="../index.html#top" class="logo">
+      <span>Ken's</span> Laboratory
+    </a>
+    <div class="copyright">© Ken's Laboratory</div>
+  </footer>
+  
+</body>
+
+</html>
