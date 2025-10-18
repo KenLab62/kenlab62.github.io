@@ -103,6 +103,7 @@ header {
   font-weight: 700;
   margin-bottom: 30px;
 }
+
 .column {
   width: 100%;
 }
@@ -179,4 +180,211 @@ footer {
 /* セクション余白の調整 */
 .ai-section {
   padding: 12px 0 8px;
+}
+
+/* リンクのスタイリング */
+.text a {
+  color: #856fde;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.text a:hover {
+  color: #6b5b9a;
+  text-decoration: none;
+  background-color: rgba(133, 111, 222, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* 外部リンクを示すアイコン（オプション） */
+.text a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* カードレイアウト */
+.card-group{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  max-width: 1040px;
+  width: 90%;
+  height: auto;
+  /* カードの横並べ折り返しのレイアウトを実現する */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* 左右の間隔をあける */
+.card-group > :not(:nth-child(4n+1)){
+  margin-left: 20px;
+}
+/* 上下の間隔をあける */
+.card-group > :nth-child(n+5){
+  margin-top: 20px;
+}
+.card{
+  /* 余白をのぞいた１行分の幅を横幅に設定 */
+  width: calc((100% - 20px * 3) / 4);
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2)
+}
+.card__imgframe{
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+  background: #bbb;
+  background-size: auto;
+  box-sizing: border-box;
+}
+.card__textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card__textbox > * + *{
+  margin-top: 10px;
+}
+.card__titletext{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
+}
+.card__overviewtext{
+  font-size: 12px;
+  line-height: 150%;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-group{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 1024px;
+    width: 90%;
+    height: auto;
+    /* カードの横並べ折り返しのレイアウトを実現する */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  /* 左右の間隔をあける */
+  .card-group > :not(:nth-child(2n)){
+    margin-left: 5%;
+  }
+  /* 上下の間隔をあける */
+  .card-group > :nth-child(n+3){
+    margin-top: 20px;
+  }
+  .card{
+    /* 余白をのぞいた１行分の幅を横幅に設定 */
+    width: calc((100% - 20% * 1) / 2);
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2)
+  }
+}
+
+/* ハイライトボックス */
+.highlight-box {
+  background-color: #f8f9fa;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.1);
+  position: relative;
+}
+
+.highlight-label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: #333333;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 活用事例テーブルのスタイル */
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.case-table th {
+  background-color: #333333;
+  color: white;
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.case-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.case-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.case-table tr:hover {
+  background-color: #f0f8ff;
+}
+
+.case-table td:first-child {
+  font-weight: bold;
+  color: #333333;
+  width: 15%;
+}
+
+.case-table td:nth-child(2) {
+  width: 45%;
+}
+
+.case-table td:nth-child(3) {
+  width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .case-table {
+    font-size: 12px;
+  }
+  
+  .case-table th,
+  .case-table td {
+    padding: 8px 6px;
+  }
+  
+  .case-table td:first-child {
+    width: 20%;
+  }
+  
+  .case-table td:nth-child(2),
+  .case-table td:nth-child(3) {
+    width: 40%;
+  }
 }
