@@ -285,18 +285,22 @@ th, td {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    /* 縦方向の間隔を統一 */
+    gap: 20px 0;
   }
-  /* 左右の間隔をあける */
-  .card-group > :not(:nth-child(2n)){
-    margin-left: 5%;
+  /* モバイルは1列表示：左右の間隔をなくす（PC用のmarginを打ち消す） */
+  .card-group > *,
+  .card-group > :not(:nth-child(4n+1)){
+    margin-left: 0 !important;
   }
-  /* 上下の間隔をあける */
-  .card-group > :nth-child(n+3){
-    margin-top: 20px;
+  /* PC用の縦間隔指定も打ち消す */
+  .card-group > :nth-child(n+5){
+    margin-top: 0 !important;
   }
   .card{
-    /* 余白をのぞいた１行分の幅を横幅に設定 */
-    width: calc((100% - 20% * 1) / 2);
+    /* 1列表示（100%幅） */
+    width: 100%;
+    margin: 0;
     height: auto;
     border-radius: 8px;
     overflow: hidden;
